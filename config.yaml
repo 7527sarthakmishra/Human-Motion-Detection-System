@@ -1,0 +1,14 @@
+# Aegis Human Risk Architecture - Custom College Dataset Blueprint
+path: ./college_dataset  # Path to your custom college dataset
+train: images/train  
+val: images/val  
+
+# Keypoints: 17 critical human joints tracking [X, Y, Visibility]
+kpt_shape: [17, 3]  
+
+# Symmetrical pairing for horizontal data augmentation
+flip_idx: [0, 2, 1, 4, 3, 6, 5, 8, 7, 10, 9, 12, 11, 14, 13, 16, 15]
+
+# Class definition
+names:
+  0: person
